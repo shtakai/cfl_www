@@ -1,4 +1,7 @@
 <cfparam name="form.submitted" default="0">
+<cfparam name="form.contactname" default="">
+<cfparam name="form.email" default="">
+<cfparam name="form.message" default="">
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -99,15 +102,15 @@
 									<!-- Message Output -->								
 									<cfif form.submitted>
 										<cfset ok = true/>
-										<cfif len(form.contactname) eq 0>
+										<cfif len(trim(form.contactname)) eq 0>
 											<cfset ok = false/>
 										</cfif>
 
-										<cfif len(form.email) eq 0>
+										<cfif len(trim(form.email)) eq 0>
 											<cfset ok = false/>
 										</cfif>
 										
-										<cfif len(form.message) eq 0>
+										<cfif len(trim(form.message)) eq 0>
 											<cfset ok = false/>
 										</cfif>
 
@@ -121,24 +124,26 @@
 									<div class="boxBody">			  
 										<div class="desc">
 
-											<form id="form" action="contact.cfm" method="post">
-												<input type="hidden" name="submitted" value="1"	>
-												<div>
-													<label>Name <span class="font-11">(required)</span></label>
-													<input name="contactname" type="text" class="required" />
-												</div>
-												<div>
-													<label>E-mail <span class="font-11">(required)</span></label>				
-													<input name="email" type="text" class="required email" />		
-												</div>
-												<div class="textarea">
-													<label>Message <span class="font-11">(required)</span></label>				
-													<textarea name="message" rows="6" cols="60" class="required"></textarea>		
-												</div>
-												<div>
-													<input id="submitBtn" value="Submit"  name="submit" type="submit" class="submitBtn" />
-												</div>
-											</form>	
+											<cfoutput>
+												<form id="form" action="contact.cfm" method="post">
+													<input type="hidden" name="submitted" value="1"	>
+													<div>
+														<label>Name <span class="font-11">(required)</span></label>
+													<input name="contactname" type="text" class="required" value="#form.contactname#" />
+													</div>
+													<div>
+														<label>E-mail <span class="font-11">(required)</span></label>				
+														<input name="email" type="text" class="required email" value="#form.email#" />		
+													</div>
+													<div class="textarea">
+														<label>Message <span class="font-11">(required)</span></label>				
+														<textarea name="message" rows="6" cols="60" class="required" value="#form.message#"></textarea>		
+													</div>
+													<div>
+														<input id="submitBtn" value="Submit"  name="submit" type="submit" class="submitBtn" />
+													</div>
+												</form>	
+											</cfoutput>
 										</div><!--END desc show--> 
 									<!--END desc-->	
 									</div>					
