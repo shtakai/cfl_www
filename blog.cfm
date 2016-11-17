@@ -47,12 +47,12 @@
 					<div class="menu_nav">
 						<div id="nav-wrap">
 							<ul class="arrowunderline" id="nav">
-								<li class="home"><a href="index.html">Home</a></li>
-								<li class="about"><a href="about.html">About</a></li>
-								<li class="resume"><a href="resume.html">Resume</a></li>
-								<li class="blog" id="selected"><a href="blog.html">Blog</a></li>
-								<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-								<li class="contact"><a href="contact.html">Contact</a></li>	
+								<li class="home"><a href="index.cfm">Home</a></li>
+								<li class="about"><a href="about.cfm">About</a></li>
+								<li class="resume"><a href="resume.cfm">Resume</a></li>
+								<li class="blog" id="selected"><a href="blog.cfm">Blog</a></li>
+								<li class="portfolio"><a href="portfolio.cfm">Portfolio</a></li>
+								<li class="contact"><a href="contact.cfm">Contact</a></li>	
 							</ul>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 									<span>8/6/2012 </span>
 								</h5>
 								<h2>
-									<a href="blogpost.html?id=">WebSocket example with keyword highlighting</a>
+									<a href="blogpost.cfm?id=">WebSocket example with keyword highlighting</a>
 								</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar erat eu metus egestas ut aliquet ante adipiscing. Maecenas eget laoreet dolor. Pellentesque sagittis nisl ac nulla semper facilisis pulvinar elit scelerisque. Nulla mollis fermentum eros a pulvinar. Mauris faucibus fringilla dolor, ut consectetur orci euismod eget. Phasellus ut dui ut tellus aliquam feugiat id at elit. Nulla facilisi. Suspendisse.</p>
 								<p class="summary">
@@ -103,7 +103,7 @@
 									<span>8/6/2012 </span>
 								</h5>
 								<h2>
-									<a href="blogpost.html?id=">ColdFusion scheduled tasks</a>
+									<a href="blogpost.cfm?id=">ColdFusion scheduled tasks</a>
 								</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus urna in turpis eleifend vel faucibus eros sodales. Donec gravida nunc a metus semper tincidunt. Quisque porttitor ullamcorper massa et vestibulum. Aenean vulputate commodo placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sit amet suscipit lectus. Nunc convallis imperdiet bibendum. Nullam eu orci ut magna laoreet sodales ac id purus. Integer dapibus velit sit amet mi commodo ut hendrerit augue facilisis. Etiam rhoncus porta.</p>
 								<p class="summary">

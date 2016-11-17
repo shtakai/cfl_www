@@ -1,3 +1,15 @@
+<cfscript>
+	personalInfo = {
+						name='test name',
+						dob='test dob', 
+						address='test address',
+						phonenumber='9123948572',
+						email='test@test.com', 
+						website='https://www.google.com', 
+						skype='test'
+					};
+	
+</cfscript>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -47,12 +59,12 @@
 					<div class="menu_nav">
 						<div id="nav-wrap">
 							<ul class="arrowunderline" id="nav">
-								<li class="home"><a href="index.html">Home</a></li>
-								<li class="about" id="selected"><a href="about.html">About</a></li>
-								<li class="resume"><a href="resume.html">Resume</a></li>
-								<li class="blog"><a href="blog.html">Blog</a></li>
-								<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-								<li class="contact"><a href="contact.html">Contact</a></li>	
+								<li class="home"><a href="index.cfm">Home</a></li>
+								<li class="about" id="selected"><a href="about.cfm">About</a></li>
+								<li class="resume"><a href="resume.cfm">Resume</a></li>
+								<li class="blog"><a href="blog.cfm">Blog</a></li>
+								<li class="portfolio"><a href="portfolio.cfm">Portfolio</a></li>
+								<li class="contact"><a href="contact.cfm">Contact</a></li>	
 							</ul>
 						</div>
 					</div>
@@ -110,13 +122,15 @@
 						<!-- Personal Information Output -->
 						<div class="right">
 							<h2>Personal Info</h2>
-							<div class="clr"><div class="input-box">Name </div><span>[name]</span> </div>
-							<div class="clr"><div class="input-box">Date of birth </div><span> [DOB]</span></div>
-							<div class="clr"><div class="input-box">Address</div><span> [address]</span></div>
-							<div class="clr"><div class="input-box">Phone</div> <span>[phonenumber]</span>  </div>
-							<div class="clr"><div class="input-box">E-mail</div><span><a href="#">[email]</a></span>  </div>
-							<div class="clr"><div class="input-box">Website </div> <span><a href="#">[website]</a></span> </div> 
-							<div class="clr"><div class="box1">Skype </div> <span><a href="#">[skype]</a></span> </div> 
+							<cfoutput>
+								<div class="clr"><div class="input-box">Name </div><span>#personalInfo.name#</span> </div>
+								<div class="clr"><div class="input-box">Date of birth </div><span>#personalInfo.dob#</span></div>
+								<div class="clr"><div class="input-box">Address</div><span>#personalInfo.address#</span></div>
+								<div class="clr"><div class="input-box">Phone</div> <span>#personalInfo.phonenumber#</span>  </div>
+								<div class="clr"><div class="input-box">E-mail</div><span><a href="##">#personalInfo.email#</a></span>  </div>
+								<div class="clr"><div class="input-box">Website </div> <span><a href="##">#personalInfo.website#</a></span> </div> 
+								<div class="clr"><div class="box1">Skype </div> <span><a href="##">#personalInfo.skype#</a></span> </div> 
+							</cfoutput>
 						</div>
 					</div>
 					<div class="clr"></div>

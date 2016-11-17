@@ -47,12 +47,12 @@
 					<div class="menu_nav">
 						<div id="nav-wrap">
 							<ul class="arrowunderline" id="nav">
-								<li class="home"><a href="index.html">Home</a></li>
-								<li class="about"><a href="about.html">About</a></li>
-								<li class="resume"><a href="resume.html">Resume</a></li>
-								<li class="blog" id="selected"><a href="blog.html">Blog</a></li>
-								<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-								<li class="contact"><a href="contact.html">Contact</a></li>	
+								<li class="home"><a href="index.cfm">Home</a></li>
+								<li class="about"><a href="about.cfm">About</a></li>
+								<li class="resume"><a href="resume.cfm">Resume</a></li>
+								<li class="blog" id="selected"><a href="blog.cfm">Blog</a></li>
+								<li class="portfolio"><a href="portfolio.cfm">Portfolio</a></li>
+								<li class="contact"><a href="contact.cfm">Contact</a></li>	
 							</ul>
 						</div>
 					</div>
@@ -111,7 +111,7 @@
 								</p>
 								<!-- Blog Export -->
 								<p>
-									<a href="exportToPDF.html?id=" target="_new"><img src="assets/images/export_pdf.png" border="0"/></a>
+									<a href="exportToPDF.cfm?id=" target="_new"><img src="assets/images/export_pdf.png" border="0"/></a>
 								</p>
 								<!-- Blog Comments Section -->
 								<h3>
@@ -149,7 +149,7 @@
 								<div class="clr hline">&nbsp;</div>
 		
 								<div class="clr postComment">
-									<form action="blogpost.html" method="post" id="form">
+									<form action="blogpost.cfm" method="post" id="form">
 										<div>
 											<label>Name <span class="font-11">(required)</span></label>
 											<input name="contactname" type="text" class="required" />
