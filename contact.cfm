@@ -102,20 +102,22 @@
 									<!-- Message Output -->								
 									<cfif form.submitted>
 										<cfset ok = true/>
-										<cfif len(trim(form.contactname)) eq 0>
+										<cfif NOT len(trim(form.contactname)) >
 											<cfset ok = false/>
 										</cfif>
 
-										<cfif len(trim(form.email)) eq 0>
+										<cfif NOT len(trim(form.email)) >
 											<cfset ok = false/>
 										</cfif>
 										
-										<cfif len(trim(form.message)) eq 0>
+										<cfif NOT len(trim(form.message)) >
 											<cfset ok = false/>
 										</cfif>
 
-										<cfif ok eq false>
+										<cfif !ok>
 											<p>You did not provide all the required information.</p>
+										<cfelse>
+											<p>Form submitted successfully.</p>
 										</cfif>
 										
 									</cfif>
