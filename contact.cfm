@@ -98,7 +98,22 @@
 									<p>Your email address will not be published. Required fields are marked *</p>		
 									<!-- Message Output -->								
 									<cfif form.submitted>
-										<p>Your form has been submitted</p>
+										<cfset ok = true/>
+										<cfif len(form.contactname) eq 0>
+											<cfset ok = false/>
+										</cfif>
+
+										<cfif len(form.email) eq 0>
+											<cfset ok = false/>
+										</cfif>
+										
+										<cfif len(form.message) eq 0>
+											<cfset ok = false/>
+										</cfif>
+
+										<cfif ok eq false>
+											<p>You did not provide all the required information.</p>
+										</cfif>
 										
 									</cfif>
 									<div id="post_message" class="post_message"></div>
