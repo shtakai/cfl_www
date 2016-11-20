@@ -1,8 +1,8 @@
 <cfscript>
 	myPortfolio = [];
-	arrayAppend(myPortfolio,{title='Title 1',website='http://www.website1.com',image='portfolio1.png',description='Description 1'});
-	arrayAppend(myPortfolio,{title='Title 2',website='http://www.website2.com',image='portfolio2.png',description='Description 2'});
-	arrayAppend(myPortfolio,{title='Title 3',website='http://www.website3.com',image='portfolio3.png',description='Description 3'});
+	arrayAppend(myPortfolio,{title='E-exchange',website='http://www.website1.com',image='portfolio1.png',description='awesome forex service'});
+	arrayAppend(myPortfolio,{title='ultra blog',website='http://www.website2.com',image='portfolio2.png',description='awsome blogging service'});
+	arrayAppend(myPortfolio,{title='AWESOME yahoo',website='http://www.website3.com',image='portfolio3.png',description='awesome directory service'});
 </cfscript>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
